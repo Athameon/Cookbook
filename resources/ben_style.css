@@ -79,3 +79,28 @@ header {
 nav {
   float: right;
 }
+
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  max-width: 1500px;
+  margin: 20px auto;
+  margin-bottom: 60px;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #daefd5;
+  padding-top: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+}
+
+footer p {
+  font-size: 20px;
+  color: #04aa6d;
+}
