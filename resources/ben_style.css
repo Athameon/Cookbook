@@ -85,7 +85,8 @@ body {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1500px;
+  margin: 20px auto;
   margin-bottom: 60px;
 }
 
