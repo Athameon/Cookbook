@@ -188,3 +188,143 @@ footer p {
 #landing_snacks {
   background-image: url("pictures/chips.jpg");
 }
+
+.recipe_item {
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  overflow: auto;
+}
+.recipe img {
+  width: 400px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.recipe_head h2 {
+  margin-bottom: 10px;
+}
+
+.recipe_head h3 {
+  clear: both;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe_title {
+  font-size: 32px;
+}
+.recipe h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.recipe_details {
+  margin-top: 20px;
+  clear: both;
+  /* display: flex; */
+  display: none;
+}
+
+.recipe_ingredients .recipe_table {
+  margin-left: 20px;
+}
+
+.recipe_ingredients table {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+}
+
+.recipe_ingredients td,
+th {
+  height: 50px;
+  vertical-align: middle;
+  text-align: start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recipe_ingredients th {
+  border-bottom: 1px solid black;
+  text-align: center center;
+}
+
+.recipe_ingredients h4 {
+  font-size: 20px;
+}
+
+.recipe_ingredients tr:nth-child(2n + 1) {
+  background-color: #b2b2b2;
+}
+
+.recipe_ingredients th {
+  background-color: white;
+}
+
+.recipe_instruction {
+  margin-right: 20px;
+}
+
+.recipe_instruction ul {
+  margin-left: 10px;
+}
+
+.recipe_step {
+  padding: 10px;
+  border-left: 2px solid white;
+  margin: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+#displayDetailsButton {
+  background-color: #348d9a;
+  padding: 5px;
+  color: white;
+  font-size: 24px;
+  float: right;
+  bottom: 0;
+}
+
+.recipe_step_title {
+  background-color: #348d9a;
+  pointer-events: none;
+  padding: 5px;
+  color: white;
+}
+
+.recipe_description {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 740px) {
+  .recipe_details {
+    flex-direction: column-reverse;
+  }
+
+  .recipe_instruction {
+    margin-right: 0;
+  }
+
+  .recipe_instruction {
+    margin-top: 20px;
+  }
+
+  .recipe_head h2 {
+    display: block;
+  }
+
+  .recipe img {
+    width: 100%;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
