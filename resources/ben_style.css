@@ -88,6 +88,8 @@ main {
   max-width: 1500px;
   margin: 20px auto;
   margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 1.3em;
 }
 
 footer {
@@ -226,8 +228,11 @@ footer p {
 .recipe_details {
   margin-top: 20px;
   clear: both;
-  /* display: flex; */
-  display: none;
+  display: flex;
+  transition: opacity 2s ease;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .recipe_ingredients .recipe_table {
@@ -282,7 +287,7 @@ th {
   border-radius: 5px;
 }
 
-#displayDetailsButton {
+.displayDetailsButton {
   background-color: #348d9a;
   padding: 5px;
   color: white;
