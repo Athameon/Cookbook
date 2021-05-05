@@ -92,7 +92,7 @@ main {
 
 footer {
   width: 100%;
-  height: 30px;
+  min-height: 30px;
   background-color: #daefd5;
   padding-top: 20px;
   text-align: center;
@@ -103,4 +103,88 @@ footer {
 footer p {
   font-size: 20px;
   color: #04aa6d;
+}
+
+.landing_dishes {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: center;
+}
+
+.landing_dish_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  margin: 20px 20px;
+}
+
+.landing_dish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  height: 98%;
+  border-radius: 20px;
+  font-size: 86px;
+  text-shadow: 5px 2px 1px white;
+  cursor: pointer;
+  transition-property: width, height;
+  transition-duration: 200ms;
+  text-decoration: none;
+  color: inherit;
+  background-size: cover;
+  background-position: center;
+}
+.landing_dish:hover {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .landing_dishes {
+    grid-template-columns: 100%;
+  }
+  .landing_dish_parent {
+    height: 200px;
+  }
+  .landing_dish {
+    height: 98%;
+  }
+
+  .landing_dish:hover {
+    height: 100%;
+    width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing_dish {
+    font-size: 56px;
+  }
+}
+
+#landing_breakfast {
+  background-image: url("pictures/breakfast.jpg");
+}
+
+#landing_lunch {
+  background-image: url("pictures/lunch.jpg");
+}
+
+#landing_dinner {
+  background-image: url("pictures/dinner.jpg");
+}
+
+#landing_sides {
+  background-image: url("pictures/pasta.jpg");
+}
+
+#landing_desserts {
+  background-image: url("pictures/ice.jpg");
+}
+
+#landing_snacks {
+  background-image: url("pictures/chips.jpg");
 }
