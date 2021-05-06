@@ -13,21 +13,21 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <a class="logo" href='index.html'>
       <img src="resources/pictures/logo.png" alt="Logo">
       <h1>The WBS Cook Book</h1>
-    </div>
+    </a>
     <nav>
       <div class="dropdown">
-        <div class="dropbtn">Breakfast</div>
+        <a class="dropbtn active" href='#'>Breakfast</a>
         <div class="dropdown-content">
-          <a href="#">Sandwiches</a>
-          <a href="#">Cerial</a>
-          <a href="#">French Egg Scramble on Toast</a>
+          <a href="#first_recipe">Sandwiches</a>
+          <a href="#second_recipe">Cerial</a>
+          <a href="#third_recipe">French Egg Scramble on Toast</a>
         </div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Lunch</div>
+        <a class="dropbtn" href='lunch.html'>Lunch</a>
         <div class="dropdown-content">
           <a href="#">Pasta</a>
           <a href="#">Pizza</a>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Dinner</div>
+        <a class="dropbtn" href='dinner.html'>Dinner</a>
         <div class="dropdown-content">
           <a href="#">Steak</a>
           <a href="#">Sushi</a>
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Sides</div>
+        <a class="dropbtn" href='sides.html'>Sides</a>
         <div class="dropdown-content">
           <a href="#">Fries</a>
           <a href="#">Rice</a>
@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn">Dessert</div>
+        <a class="dropbtn" href='dessert.html'>Dessert</a>
         <div class="dropdown-content">
           <a href="#">Ice Cream</a>
           <a href="#">Tiramisu</a>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <div class="dropbtn" id="last_nav_element">Snacks</div>
+        <a class="dropbtn" id="last_nav_element" href='snacks.html'>Snacks</a>
         <div class="dropdown-content">
           <a href="#">Protein Balls</a>
           <a href="#">Chips</a>
@@ -72,54 +72,253 @@
       </div>
     </nav>
   </header>
+  <main class="recipe">
+    <div class="recipe_item" id="first_recipe">
+      <img src="resources/pictures/breakfast_sandwich.webp" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Club sandwich</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">20-25 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
 
-  <div class="breadcrumb_navigation">
-      <ol>
-          <li>Breakfast</li>
-      </ol>
-  </div>
-
-  <main class="category_content">
-    <div class="category_container category_breakfast">
-        <div class="category_header">
-            <h3>Breakfast</h3>
-            <input type="text" name="keywords" id="keywords" placeholder="keywords">
-            <div class="filter">
-                <i class="fas fa-filter"></i>
-                <a href="#">Filter</a>
-            </div>
+      </div>
+      <p class="recipe_description">
+        This layered sandwich, a favourite of gastro-pubs across the country, makes a tasty meal for one.<br>A combination of crispy toasted bread and savory, flavorful fillings makes for an easy to grab comfort food.
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">
+              Heat grill to High and cook the bacon, turning halfway through, until crisp. Toast the bread and spread one slice with the mayo.
+            </li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">
+              Layer on the egg, tomato and bacon, then top with another slice of bread. Add the chicken or turkey, bacon, then lettuce. Finish with the final slice of bread and cut into quarters. Secure with cocktail sticks and serve with crisps, if you like.
+            </li>
+          </ul>
         </div>
-        <div class="category_dish">
-            <div class="dish_header">
-                <h2 class="dish_title">Ice Cream</h2>
-                <div class="dish_time">
-                    <i class="far fa-clock dish_time_icon"></i>
-                    <p class="dish_time_text">15-120min</p>
-                </div>
-                <div class="dish_difficulty">
-                    <div class="difficulty_stars">
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="difficulty_text">easy</p>
-                </div>
-            </div>
-            <div class="dish_body">
-                <div class="dish_image">
-                    <img src="" alt="">
-                </div>
-                <div class="dish_description">
-                    <p>Je reifer, desto besser! Da das Bananeneis nicht zusätzlich gesüßt wird, schmeckt es mit Bananen, die schon braune Punkte auf der Schale haben, am besten. Diese sind nämlich sehr reif und dadurch besonders süß.</p>
-                </div>
-            </div> 
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4 strips</td>
+                  <td>streaky bacon</td>
+                </tr>
+                  <tr>
+                  <td>3 slices</td>
+                  <td>white bread</td>
+                </tr>
+                <tr>
+                  <td>1 tbsp</td>
+                  <td>mayonnaise</td>
+                </tr>
+                  <tr>
+                  <td>1</td>
+                  <td>sliced hard-boiled egg</td>
+                </tr>
+              </tr>
+                <tr>
+                <td>1</td>
+                <td>tomato</td>
+              </tr>
+                <tr>
+                <td>few</td>
+                <td>chicken/turkey slices</td>
+              </tr>
+                <tr>
+                <td>handful</td>
+                <td>salad leaves</td>
+              </tr>
+              </tr>
+                <tr>
+                <td>handful</td>
+                <td>chips, fries or onion rings if you like</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="recipe_item" id="second_recipe">
+      <img src="resources/pictures/breakfast_cereal.jpeg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Blueberry Oatmeal</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">15 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        Blueberry Cinnamon Oatmeal is healthy, hearty, and so easy to make! This simple homemade oatmeal comes together on the stove top in just a few minutes and can be made with fresh or frozen blueberries. 
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">
+              In a medium saucepan, melt the butter over medium high heat. Add the blueberries, brown sugar, and sprinkle in the spices and salt. Cook for 2-3 minutes until the blueberries are softened.<br>The blueberries can be added now or after the cooking process based on preference.
+            </li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">
+              Pour in the water, turn the heat up to high, and bring to a low boil. Add the oats and reduce the heat to medium/medium high. Cook, stirring occasionally for 3-5 more minutes.
+            </li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">
+              Continue cooking until most of the liquid is absorbed. Serve with milk or cream if desired.
+            </li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1/2 tablespoon </td>
+                  <td>unsalted butter</td>
+                </tr>
+                  <tr>
+                  <td>1 1/2 cups</td>
+                  <td>brown sugar</td>
+                </tr>
+                <tr>
+                  <td>1 teaspoon</td>
+                  <td>cinnamon</td>
+                </tr>
+                  <tr>
+                  <td>1/4 teaspoon</td>
+                  <td>ground ginger </td>
+                </tr>
+              </tr>
+                <tr>
+                <td>1/4 teaspoon</td>
+                <td>ground nutmeg  </td>
+              </tr>
+                <tr>
+                <td>1 pinch</td>
+                <td>salt </td>
+              </tr>
+                <tr>
+                <td>2 cups</td>
+                <td>water </td>
+              </tr>
+              </tr>
+                <tr>
+                <td>1 cup</td>
+                <td>dry oats (whole grain)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="third_recipe">
+      <img src="resources/pictures/breakfast_eggs.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">French scrambled eggs</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">25 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Advanced</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        These sublime scrambled eggs will renew your love for this morning classic.
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">
+              Crack 6 cold eggs into a deep saucepan.
+            </li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">
+              Add the butter. For smaller batches, use a 2-to-1 eggs-to-butter ratio.
+            </li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">
+              Put the pan on high heat.
+            </li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">
+              Stir continuously with a rubber spatula—don't whisk—making sure to scrape the bottom of the pan.
+            </li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">
+              After 30 seconds, take the pan off the heat. Keep stirring. After about 10 seconds, put back on the heat. Repeat for 3 minutes.
+            </li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">
+              In the last minute, season the eggs lightly. For extra creamy texture, stir in 1 tsp of crème fraîche.
+            </li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">
+              Plate and garnish with fragrant fresh herbs like Chives or Parsley.
+            </li>       
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>6</td>
+                  <td>large egg</td>
+                </tr>
+                  <tr>
+                  <td>1 tsp</td>
+                  <td>crème fraîche</td>
+                </tr>
+                <tr>
+                  <td>1:2 ratio</td>
+                  <td>butter : eggs by volume</td>
+                </tr>
+                  <tr>
+                  <td>handful</td>
+                  <td>fresh herbs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
   <footer>
 
     <p>&copy; Copyright WBS Course 15/2021 Group 1</p>
 
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
