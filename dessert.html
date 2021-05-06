@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookbook</title>
+  <link rel="stylesheet" href="resources/reset.css">
+  <link rel="stylesheet" href="resources/ben_style.css">
+  <link rel="stylesheet" href="resources/danny_style.css">
+  <link rel="stylesheet" href="resources/joachim_style.css">
+  <link href="resources/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="resources/pictures/logo.png" alt="Logo">
+      <h1>The WBS Cook Book</h1>
+    </a>
+    <nav>
+      <div class="dropdown">
+        <a href="breakfast.html" class="dropbtn">Breakfast</a>
+        <div class="dropdown-content">
+          <a href="#">Sandwiches</a>
+          <a href="#">Cerial</a>
+          <a href="#">French Egg Scramble on Toast</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="lunch.html" class="dropbtn">Lunch</a>
+        <div class="dropdown-content">
+          <a href="#">Pasta</a>
+          <a href="#">Pizza</a>
+          <a href="#">Schnitzel</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="dinner.html" class="dropbtn">Dinner</a>
+        <div class="dropdown-content">
+          <a href="#">Steak</a>
+          <a href="#">Sushi</a>
+          <a href="#">Salad bowl</a>
+          <a href="#">Salmon</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="sides.html" class="dropbtn">Sides</a>
+        <div class="dropdown-content">
+          <a href="#">Fries</a>
+          <a href="#">Rice</a>
+          <a href="#">Potatoes</a>
+          <a href="#">Bread</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dessert</div>
+        <div class="dropdown-content">
+          <a href="#">Ice Cream</a>
+          <a href="#">Tiramisu</a>
+          <a href="#">Creme Brulee</a>
+          <a href="#">Cake</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="snacks.html" class="dropbtn" id="last_nav_element">Snacks</a>
+        <div class="dropdown-content">
+          <a href="#">Protein Balls</a>
+          <a href="#">Chips</a>
+          <a href="#">Chocolate</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="recipe">
+    <div class="recipe_item" id="blueberry-banana_ice">
+      <img src="resources/pictures/blueberry.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Blueberry-banana ice cream</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">50 - 60 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        Delicious blueberry banana ice cream.
+Particularly digestible, also for allergy sufferers
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Peel and slice 8 bananas and freeze for at least 6 hours.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Cut 1 banana into slices. Wash the blueberries.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Blend frozen bananas and frozen blueberries in a universal chopper until creamy. Serve with banana slices and fresh blueberries.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9</td>
+                  <td>Bananas</td>
+                </tr>
+                  <tr>
+                  <td>100g</td>
+                  <td>Blueberry</td>
+                </tr>
+                <tr>
+                  <td>250g</td>
+                  <td>Frozen Blueberry</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="tiramisu">
+      <img src="resources/pictures/hazelnut_cake.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Tiramisu</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">45 Minutes + 12 Hours</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h3 class="recipe_level">Advanced</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        Tiramisu is a timeless no-bake Italian dessert combining espresso-dipped ladyfingers and a creamy lightly sweetened mascarpone cream. This recipe is from the late Maida Heatter and is easily the best homemade tiramisu recipe that I’ve ever tried.
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">You need a large 9×13 inch baking pan/dish with at least a 12-14 cup capacity. Set aside and have ready to go!</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Dip half of the ladyfingers: You will form 2 layers each of dipped ladyfingers and mascarpone cream. Let’s begin with the 1st layer of ladyfingers. Whisk the espresso and Grand Marnier together in a shallow bowl. One at a time, quickly dip each side of the ladyfinger into the espresso mixture. You don’t want to over-saturate the ladyfinger with liquid because then the ladyfingers will taste soggy. Just a quick dip on each side. Arrange the dipped ladyfingers in the baking pan to make one solid layer. If needed, cut some ladyfingers to fill in any empty spaces. Reserve remaining espresso mixture and ladyfingers for another layer.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Begin the mascarpone cream: With a handheld or stand mixer fitted with a paddle or whisk attachment, beat the mascarpone and rum together on medium speed in a large bowl until smooth. Set aside.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Prepare a double boiler for the egg yolks: If you have a double boiler, use it in this step. If you don’t, place a heat-proof bowl over a small pot of simmering water over medium-low heat. Don’t let the water touch the bottom of the bowl.  Using a whisk or eggbeater (I simply use a whisk), whisk the egg yolks and 1/4 cup (50g) of granulated sugar together until light and foamy, about 5 minutes. Remove from the heat and immediately pour into the mascarpone mixture. Beat on medium speed until combined.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Whip the heavy cream: With a handheld or stand mixer fitted with a whisk attachment, beat the heavy cream and vanilla extract together on medium-high speed until medium peaks form, about 3-4 minutes. Medium peaks are between soft/loose peaks and stiff peaks– and are the perfect consistency for the tiramisu cream. Fold the whipped cream into the mascarpone mixture.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Beat the egg whites: With a handheld or stand mixer fitted with a *clean* whisk attachment, beat the egg whites and salt together on medium-high speed until foamy, about 1 minute. Increase to high speed and slowly pour in the remaining 1/4 cup (50g) of sugar. Beat until stiff peaks form, about 4-5 minutes. (Do not over-beat as the egg whites will become dry.) Fold into the mascarpone cream.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Spread half of the mascarpone cream evenly over bottom layer of ladyfingers. An offset spatula helps spread it neatly and evenly.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Dip remaining ladyfingers: Dip remaining ladyfingers into remaining espresso mixture and arrange one-by-one on top of the mascarpone layer. Gently press each down so they are nice and compact. Using an offset spatula, spread remaining mascarpone mixture evenly on top. If you’re using a large enough pan, it should all fit (but it will definitely tower high!). Refrigerate uncovered for 2-3 hours.</li>
+            <li><button class="recipe_step_title">Step 9</button></li>
+            <li class="recipe_step">Add cocoa layer, then chill: After a couple hours in the refrigerator, sift or strain a dense layer of cocoa powder all over the top. Wipe the rim of the baking dish. Cover with plastic wrap or aluminum foil, then refrigerate for at least 8-9 more hours and up to 1 day.</li>
+            <li><button class="recipe_step_title">Step 10</button></li>
+            <li class="recipe_step">Using a sharp knife, slice chilled tiramisu into servings. Wipe knife clean between cuts. A small metal serving spatula is helpful for removing the slices.</li>
+            <li><button class="recipe_step_title">Step 11</button></li>
+            <li class="recipe_step">Cover leftover tiramisu and store in the refrigerator for up to 3 days.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>300ml</td>
+                  <td>Very strongly prepared espresso, warm or room temperature</td>
+                </tr>
+                  <tr>
+                  <td>90ml</td>
+                  <td>Grand Marnier</td>
+                </tr>
+                <tr>
+                  <td>40–45</td>
+                  <td>Ladyfingers</td>
+                </tr>
+                  <tr>
+                  <td>450g</td>
+                  <td>Mascarpone, cold or at room temperature</td>
+                </tr>
+                <tr>
+                  <td>60ml</td>
+                  <td>dark rum</td>
+                </tr>
+                  <tr>
+                  <td>4 large</td>
+                  <td>Eggs, separated</td>
+                </tr>
+                <tr>
+                  <td>100g</td>
+                  <td>Granulated sugar, divided</td>
+                </tr>
+                  <tr>
+                  <td>480ml</td>
+                  <td>Heavy cream or heavy whipping cream</td>
+                </tr>
+                <tr>
+                  <td>2kg</td>
+                  <td>Potetos</td>
+                </tr>
+                  <tr>
+                  <td>1/2 teaspoon</td>
+                  <td>Pure vanilla extract</td>
+                </tr>
+                <tr>
+                  <td>1/8 teaspoon</td>
+                  <td>Salt</td>
+                </tr>
+                  <tr>
+                  <td>500ml</td>
+                  <td>Creame</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="creme_brulee">
+      <img src="resources/pictures/creme_brulee.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Easy Crème Brûlée</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">15 Minutes + 35 Minutes -> 4 hours, 50 minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Moderate</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        This is the BEST and creamiest crème brûlée recipe! Flecked with espresso and vanilla, you only need 6 simple ingredients and they’re ready to bake in only 15 minutes.
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Preheat oven to 325°F (163°C).</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Whisk the egg yolks and 1/2 cup (100g) of granulated sugar together. Set aside. (At this point or before you temper the egg yolks in the next step, bring a small kettle or pot of water to a boil. You’ll need hot water to pour into the baking sheet for the water bath.)</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Heat the heavy cream, espresso powder, and salt together in a medium saucepan over medium heat. As soon as it begins to simmer, remove from heat. Stir in the vanilla extract. Remove about 1/2 cup of warm heavy cream and, in a slow and steady stream, whisk into the egg yolks. Keep those egg yolks moving so they don’t scramble. In a slow and steady stream, pour and whisk the egg yolk mixture into the warm heavy cream.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Place ramekins in a large baking pan. If you don’t have 1 pan large enough, bake them in a couple pans. Divide custard between each ramekin, filling to the top. Carefully fill the pan with about a 1/2 inch of the hot water. The baking pan will be hot so use an oven mitt to carefully transfer the pan to the oven.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Bake until the edges are set and centers are a little jiggly. The time depends on the depth of your ramekins. My ramekins are 1-inch and the custard takes 35 minutes. Begin checking them at 30 minutes. For a more accurate sign, they’re done when an instant read thermometer registers 170°F (77°C).</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Remove pan from the oven and, using an oven mitt, remove the ramekins from the pan. Place on a wire rack to cool for at least 1 hour. Place in the refrigerator, loosely covered, and chill for at least 4 hours and up to 2 days before topping.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Using the remaining granulated sugar, sprinkle a thin layer all over the surface of the chilled custards. Caramelize the sugar with a kitchen torch and serve immediately or store in the refrigerator for up to 1 hour before serving. (Caramelized topping is best enjoyed right away.)</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5 large</td>
+                  <td>Egg yolks</td>
+                </tr>
+                  <tr>
+                  <td>150g</td>
+                  <td>Granulated sugar, divided</td>
+                </tr>
+                <tr>
+                  <td>720ml</td>
+                  <td>heavy cream</td>
+                </tr>
+                <tr>
+                  <td>1/2 teaspoon</td>
+                  <td>Espresso powder</td>
+                </tr>
+                <tr>
+                  <td>1/4 teaspoon</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>1 and 1/2 teaspoons</td>
+                  <td>Pure vanilla extract</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="chocolate_babka">
+      <img src="resources/pictures/cake.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">CHOCOLATE BABKA RECIPE</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">30 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Moderate</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        What would make brioche dough even better? Gooey, melted, sticky, delicious…Nutella. Make this melt-in-your mouth chocolate babka using a brioche dough filled with Nutella and this decadent dessert will become your new favourite…on repeat. Think layers of chocolatey goodness melted between freshly made, moist brioche dough. This chocolate babka recipe was developed with professional baker Anthony Silvio and is an absolute showstopper. You won’t understand until you take the first bite…and then you’ll be hooked!
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Chocolate Babka starts with a homemade brioche base. To start making the dough, add the buttermilk, egg yolk and whole egg to the bowl of a stand mixer, along with all dry ingredients and mix at a medium speed using the hook attachment.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">After a few minutes, remove the bowl from the mixer and fold the dough over a few times using a spatula, scraping any excess from the sides and continuing to incorporate it.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">The chocolate babka dough will need to mix until the dough starts to pull away from the sides of the bowl.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Once it is developed add the soft butter, a teaspoon at a time, (while the mixer is still on) and continue mixing until it has combined well.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">At this point, if ready, the dough should be shiny, feel a little elastic and have come completely away from the sides of your mixing bowl.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Next, using a spatula and being very gentle transfer your dough into a lightly greased container with the lid on.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Refrigerate overnight to encourage a long, slow fermentation for maximum flavor.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Sprinkle some flour over your bench and carefully tip out the dough from the container without folding or kneading it. The dough should be firm to the touch as the butter has solidified in the fridge.</li>
+            <li><button class="recipe_step_title">Step 9</button></li>
+            <li class="recipe_step">After resting, sprinkle flour over your bench top/board and dust the top of the dough with a generous amount of flour (too) then press down using the tips of your fingers to start to flatten it.</li>
+            <li><button class="recipe_step_title">Step 10</button></li>
+            <li class="recipe_step">Slowly start to roll the dough using a rolling pin with nice even pressure back and forth – move in this motion only.</li>
+            <li><button class="recipe_step_title">Step 11</button></li>
+            <li class="recipe_step">Once the chocolate babka dough starts to flatten, turn it clockwise and roll a few more times, repeating until you pin the dough out to 30cm x 30cm square ((11.8in x 11.8in).</li>
+            <li><button class="recipe_step_title">Step 12</button></li>
+            <li class="recipe_step">Spread thick Nutella over the top of the dough leaving a border around the edges. If you don’t like Nutella, you can choose other toppings and add them in – chocolate chips, candied fruits, whatever you like!</li>
+            <li><button class="recipe_step_title">Step 13</button></li>
+            <li class="recipe_step">Starting from the bottom and working your way up, begin to roll the dough bit by bit using both hands until you create a large log.</li>
+            <li><button class="recipe_step_title">Step 14</button></li>
+            <li class="recipe_step">Keep the sides of your chocolate babka log in and once you get to the end, pinch the dough at the bottom and roll it over (this will help it stick together). The log should be nice and even.</li>
+            <li><button class="recipe_step_title">Step 15</button></li>
+            <li class="recipe_step">Next put the dough on a floured tray and place it in the fridge for 20 minutes.</li>
+            <li><button class="recipe_step_title">Step 16</button></li>
+            <li class="recipe_step">After this time, flour your bench once again and place the chocolate babka dough down with one end facing you.</li>
+            <li><button class="recipe_step_title">Step 17</button></li>
+            <li class="recipe_step">Using a serrated bread knife, gently cut directly down the middle and then separate into 2 halves using a pastry cutter.</li>
+            <li><button class="recipe_step_title">Step 18</button></li>
+            <li class="recipe_step">Place one half on its side, with the Nutella facing up and the other piece over the top on an angle so it creates an X.</li>
+            <li><button class="recipe_step_title">Step 19</button></li>
+            <li class="recipe_step">Now twist one side over the other, always making sure the chocolate side is always facing up.</li>
+            <li><button class="recipe_step_title">Step 20</button></li>
+            <li class="recipe_step">Do it a few times until the two meet completely and pinch each end so it comes together well.</li>
+            <li><button class="recipe_step_title">Step 21</button></li>
+            <li class="recipe_step">Using a 20cm/7.87inch cake loaf tin cut 2 pieces of baking paper so you can layer them each way across the tin.</li>
+            <li><button class="recipe_step_title">Step 22</button></li>
+            <li class="recipe_step">Place the babka loaf in the tin ensuring it is pressed in well. You can use the pastry cutter to help scoop it up quickly too if it helps!</li>
+            <li><button class="recipe_step_title">Step 23</button></li>
+            <li class="recipe_step">Cover the chocolate babka and tin all the way around using plastic wrap and leave to proof for 1hr.</li>
+            <li><button class="recipe_step_title">Step 24</button></li>
+            <li class="recipe_step">After this time, remove the plastic wrap and cover with foil, placing it into the oven at 170°C/338°F for 20 minutes.</li>
+            <li><button class="recipe_step_title">Step 25</button></li>
+            <li class="recipe_step">Remove the foil and cook for another 10 minutes to brown up the crust.</li>
+            <li><button class="recipe_step_title">Step 26</button></li>
+            <li class="recipe_step">While the chocolate babka is baking, mix together ½ cup white sugar and ½ cup water in a small saucepan.</li>
+            <li><button class="recipe_step_title">Step 27</button></li>
+            <li class="recipe_step">Place on the stove at a medium heat and leave to boil. Once it boils, simmer for a further 5 minutes until it becomes “syrup-like” in texture. Turn off the stove and leave to cool.</li>
+            <li><button class="recipe_step_title">Step 28</button></li>
+            <li class="recipe_step">Once the babka is ready, brush the syrup over the top and leave to rest for 5-10 minutes.</li>
+            <li><button class="recipe_step_title">Step 29</button></li>
+            <li class="recipe_step">Now pull the chocolate babka out of the tin using the baking paper to lift it up and leave to cool for 1hr.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>250g</td>
+                  <td>Plain Flour</td>
+                </tr>
+                  <tr>
+                  <td>10g</td>
+                  <td>Sugar</td>
+                </tr>
+                <tr>
+                  <td>6g</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>4g</td>
+                  <td>Dried Yeast</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Free-Range Egg</td>
+                </tr>
+                  <tr>
+                  <td>1</td>
+                  <td>Free-Range Egg Yolk</td>
+                </tr>
+                <tr>
+                  <td>110g</td>
+                  <td>Buttermilk</td>
+                </tr>
+                <tr>
+                  <td>100g</td>
+                  <td>Cultured Butter (unsalted)</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Plain flour (for dusting)</td>
+                </tr>
+                  <tr>
+                  <td>250g</td>
+                  <td>Nutella</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <p>&copy; Copyright WBS Course 15/2021 Group 1</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
