@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookbook</title>
+  <link rel="stylesheet" href="resources/reset.css">
+  <link rel="stylesheet" href="resources/ben_style.css">
+  <link rel="stylesheet" href="resources/danny_style.css">
+  <link rel="stylesheet" href="resources/joachim_style.css">
+  <link href="resources/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="resources/pictures/logo.png" alt="Logo">
+      <h1>The WBS Cook Book</h1>
+    </a>
+    <nav>
+      <div class="dropdown">
+        <a href="breakfast.html" class="dropbtn">Breakfast</a>
+        <div class="dropdown-content">
+          <a href="#">Sandwiches</a>
+          <a href="#">Cerial</a>
+          <a href="#">French Egg Scramble on Toast</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="lunch.html" class="dropbtn">Lunch</a>
+        <div class="dropdown-content">
+          <a href="#">Pasta</a>
+          <a href="#">Pizza</a>
+          <a href="#">Schnitzel</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="dinner.html" class="dropbtn">Dinner</a>
+        <div class="dropdown-content">
+          <a href="#">Steak</a>
+          <a href="#">Sushi</a>
+          <a href="#">Salad bowl</a>
+          <a href="#">Salmon</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="sides.html" class="dropbtn">Sides</a>
+        <div class="dropdown-content">
+          <a href="#">Fries</a>
+          <a href="#">Rice</a>
+          <a href="#">Potatoes</a>
+          <a href="#">Bread</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dessert</div>
+        <div class="dropdown-content">
+          <a href="#">Ice Cream</a>
+          <a href="#">Tiramisu</a>
+          <a href="#">Creme Brulee</a>
+          <a href="#">Cake</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="snacks.html" class="dropbtn" id="last_nav_element">Snacks</a>
+        <div class="dropdown-content">
+          <a href="#">Protein Balls</a>
+          <a href="#">Chips</a>
+          <a href="#">Chocolate</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <main class="recipe">
+    <div class="recipe_item" id="blueberry-banana_ice">
+      <img src="resources/pictures/Sides_French_Fries.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">French Fries</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">60 - 90 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        If you have a hankering for crispy on the outside, creamy on the inside, perfectly salted French Fries, then look no further. You will get addicted!
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Take 1 extra-large waxy potato of about 315 grams. Rinse well in water and then peel the potato (optional).</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Now slice the potato in slices having 1 cm thickness.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Cut the potatoes in sticks having 1 cm width.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Rinse these potato sticks for a couple of times in water. Add the rinsed potatoes to a bowl and submerge them in cold water for 30-45 minutes to remove extra starch. After 30 minutes or 45 minutes, drain the potatoes in a colander.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Rinse the potatoes with running water. Drain all the extra water. Place the potatoes on a clean napkin.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Fold the napkin over to press, pat and dry the potatoes. The potatoes have to be completely dried before you begin to fry them.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Heat oil in a wok or pan. Put the pottoes into the oil and stirr from time to time. After 3-4 min the fries are ready and should not be brown on the outside.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Take the fries out of the oil and put them for a while on a kitchen napkin. Put a sufficient amount of salt on them. Ready!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>300-400g /td>
+                  <td>Waxy Potatoes</td>
+                </tr>
+                  <tr>
+                  <td>500 ml</td>
+                  <td>Oil</td>
+                </tr>
+                <tr>
+                  <td>A Fair Amount</td>
+                  <td>Salt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="tiramisu">
+      <img src="resources/pictures/sides_lime_cilantro_rice.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Mexican Rice</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">20 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Moderate</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        A moderately easy side dish that pairs well with meat, but also fish. The herbs and a piece of lime fruit additionally pleases the eyes! You'll love it!
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Combine rice and chicken broth in a pen and bring it to boil.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Reduce the heat and simmer it about 15 min. Watch out that the rice absorbes the broth and becomes tender.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Add lime juice, cilantro and nutmeg; fluff with a fork.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Fill it in a bowl and keep it warm. Ready!.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 cup</td>
+                  <td>Uncooked Jasmine Rice</td>
+                </tr>
+                  <tr>
+                  <td>2 cups</td>
+                  <td>Reduced Chicken Broth</td>
+                </tr>
+                <tr>
+                  <td>2 tablespoons</td>
+                  <td>Lime Juice</td>
+                </tr>
+                  <tr>
+                  <td>2 tablespoons</td>
+                  <td>Fresh Cilantro</td>
+                </tr>
+                <tr>
+                  <td>1/8 tablespoon</td>
+                  <td>Ground Nutmeg</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="creme_brulee">
+      <img src="resources/pictures/sides_roasted_potatoes.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Oven Roasted Potatoes</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">30 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        Dreaming of crispy, golden oven roasted potatoes, like you saw on the TV-show? Now you can eat them in your very own home! Go for it!
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">To make the roasted potatoes, peel the skin off and cut them into your preferred size, placing them in the bowl of water once cut. Then, rinse and drain the potatoes once again and put them into a clean bowl.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Sprinkle a few pinches of fine salt over the potatoes, rubbing it over them really well, mixing it through using your hands.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Transfer the potatoes into an oven safe baking tray and spread them out, before adding a few short rosemary stalks and garlic cloves (with the skin still on, making a small slit with a knife).</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Braise the roasted potatoes at a medium heat on the stove top, mixing and turning them with a fork every so often, for up to 15 minutes.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Place the braised potatoes in the oven to cook for up to 30 minutes or until they are crispy and golden.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Once the roasted potatoes are cooked, remove them from the oven.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Enjoy, and feel like home!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>6 Large</td>
+                    <td>Potatoes</td>
+                  </tr>
+                <tr>
+                  <td>Enough</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>A bundle</td>
+                  <td>Rosmary</td>
+                </tr>
+                <tr>
+                  <td>Up to taste</td>
+                  <td>Garlic</td>
+                </tr>
+                <tr>
+                  <td>Some</td>
+                  <td>Virgin Olive Oil</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="chocolate_babka">
+      <img src="resources/pictures/sides_crusty_bread.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Crusty French Bread</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">3 Hours</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Moderate</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        This easy homemade French bread recipe is sure to be a hit! Just a few hours – no overnight rise. Crispy crust on the outside and soft, airy bread on the inside! It will enter your dreams!
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Mix the dough. This is a very slack dough (also known as a wet or sticky dough)! The dough will be shaggy and somewhat sticky, but it will smooth out as the gluten develops while it rises and again when it’s time to shape.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Let the dough rise (1 hour) Kick back, relax, and let your dough do it’s thing!</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Shape the dough (5 minutes) Lightly flour a cutting board, tip the dough out, and gently form it into a round loaf (watch the videos below to see exactly how we do this!)</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Let the dough rise one final time (30 minutes) When your dough is shaped, pop it into a medium-sized bowl or proofing basket to rise for 30 minutes while you preheat the oven.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Bake (45 minutes) Carefully transfer the bread to your preheated Dutch oven (or use an alternative method!) I like to use a piece of parchment paper to make it easier to lift the bread in and out of the pot. Bake for 30 minutes with the lid on, then remove the lid and bake another 10-15 minutes to help the bread develop more color.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Let the bread cool, slice, and enjoy!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9g</td>
+                  <td>Active Dry Yeast</td>
+                </tr>
+                  <tr>
+                  <td>4g</td>
+                  <td>Sugar</td>
+                </tr>
+                <tr>
+                  <td>300g</td>
+                  <td>Warm Water</td>
+                </tr>
+                <tr>
+                  <td>10g</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>400g</td>
+                  <td>Flour</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <p>&copy; Copyright WBS Course 15/2021 Group 1</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
