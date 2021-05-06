@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks</title>
+  <link rel="stylesheet" href="resources/reset.css">
+  <link rel="stylesheet" href="resources/ben_style.css">
+  <link rel="stylesheet" href="resources/danny_style.css">
+  <link rel="stylesheet" href="resources/joachim_style.css">
+  <link href="resources/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="resources/pictures/logo.png" alt="Logo">
+      <h1>The WBS Cook Book</h1>
+    </div>
+    <nav>
+      <div class="dropdown">
+        <div class="dropbtn">Breakfast</div>
+        <div class="dropdown-content">
+          <a href="#">Sandwiches</a>
+          <a href="#">Cerial</a>
+          <a href="#">French Egg Scramble on Toast</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Lunch</div>
+        <div class="dropdown-content">
+          <a href="#">Pasta</a>
+          <a href="#">Pizza</a>
+          <a href="#">Schnitzel</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dinner</div>
+        <div class="dropdown-content">
+          <a href="#">Steak</a>
+          <a href="#">Sushi</a>
+          <a href="#">Salad bowl</a>
+          <a href="#">Salmon</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Sides</div>
+        <div class="dropdown-content">
+          <a href="#">Fries</a>
+          <a href="#">Rice</a>
+          <a href="#">Potatoes</a>
+          <a href="#">Bread</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dessert</div>
+        <div class="dropdown-content">
+          <a href="#">Ice Cream</a>
+          <a href="#">Tiramisu</a>
+          <a href="#">Creme Brulee</a>
+          <a href="#">Cake</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn active" id="last_nav_element">Snacks</div>
+        <div class="dropdown-content">
+          <a href="#">Protein Balls</a>
+          <a href="#">Chips</a>
+          <a href="#">Chocolate</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="recipe">
+    <div class="recipe_item" id="oalmean_apple_balls">
+      <img src="resources/pictures/biscuits.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Oatmeal apple balls</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">90 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        Delicious oatmeal apple balls which are easy to make.
+Enjoy these special snacks which are also very healthy.
+After enjoying them once, you will never want to eat anything else.
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Peel the apples, remove the core and grate finely. Put the oat flakes in a food processor and chop finely. Mix into the apple together with the almonds. Mix well.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Form small balls from the mixture and place them next to each other on a baking tray lined with baking paper. Bake in the oven preheated to 150 °C top/bottom heat for approx. 60 minutes. Turn occasionally so that the balls are brown all over.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 big</td>
+                  <td>Apples</td>
+                </tr>
+                  <tr>
+                  <td>200g</td>
+                  <td>Fine oat flakes</td>
+                </tr>
+                <tr>
+                  <td>50g</td>
+                  <td>chopped almonds</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="chips">
+      <img src="resources/pictures/chips.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">HOMEMADE BAKED POTATO CHIPS</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">60 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Medium</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        So simple and healthy, it’s easy to make your own homemade baked potato chips that are rustic and crispy! And once you do, there’s no going back to the bag!<br/>
+Once you go homemade – there is no turning back!
+Forget the bag, this homemade baked potato chips recipe bakes up perfectly crispy and delicious. Plus, they are so much healthier than packaged potato chips since you control the amount of oil and salt!<br/>
+It’s easy to make homemade baked potato chips that are healthy with just a few simple steps.
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">It starts with the right oven temperature. I’ve made oven baked potato chips with varying degrees, 375 – 450 F., and find that 400 – 425 is the sweet spot. Depending on where you live may affect what temperature you use. I would play around with both and see what works best for you.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Prep the potatoes. Scrub the potatoes well and pat them dry with a paper or cloth towel.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Thin is best when slicing. Thinly slice the the potatoes to about 1/16 of an inch. I wouldn’t slice them any larger than ⅛ inches. I used this mandoline (affiliate link) which made it a breeze and super easy, but if you’re good with a knife slice away.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Toss with a little olive oil. You can oil the potatoes by tossing them together in a bowl or oil them right on the baking sheet with basting brush. No need to use a lot of oil, just enough to lightly coat each slice.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Layer on baking sheet. When layering the potatoes, be sure they have space between them so the heat has plenty of room to get all around each chip.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Bake to perfection. Bake for 10 minutes, carefully remove from the oven, and using tongs, flip each one and bake for 7 – 8 minutes more. Be sure to keep an eye on them at the end as they will cook fast towards the end.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>Potatoes</td>
+                </tr>
+                  <tr>
+                  <td></td>
+                  <td>Spices: eg Salt, Peper, Paprika</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="chocolate_truffles">
+      <img src="resources/pictures/chocolate.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Chocolate truffles</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">30 Minutes + cooking time</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Super Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        The beauty of this truffle recipe is that your guests can get involved and make their own. Arrange nicely on a table, put a few cocktail sticks next to them and let people get stuck in and make their own. 
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Pour the cream in a pan, place over a medium heat and let it heat up – you don’t want it boiling, just hot.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">As soon as tiny bubbles start to appear, add the butter and finely grate in the clementine zest, and stir to melt the butter.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Snap the chocolate into small pieces and place in a heatproof bowl. Pour the creamy mixture over the chocolate, whisking as you go, so the chocolate slowly melts. If the mixture splits slightly, don’t worry, you can bring it right by adding a splash of boiling water.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Add a pinch of sea salt. then stir in the brandy. Once completely smooth, pour the mixture into a nice serving dish or bowl.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Place in the fridge for 2 hours to set. About 30 minutes before you’re ready to make your truffles, pull the bowl out of the fridge and let the chocolate warm up to room temperature.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Put the mixed nuts into a plastic bag and use a rolling pin to bash them up quite finely. Get some little saucers or bowls and put the nuts in one and the cocoa powder in the other.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Put a teacup filled with boiled water on the tray and pop a few teaspoons in there for</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2kg</td>
+                  <td>Potetos</td>
+                </tr>
+                  <tr>
+                  <td>500ml</td>
+                  <td>Creame</td>
+                </tr>
+                <tr>
+                  <td>2kg</td>
+                  <td>Potetos</td>
+                </tr>
+                  <tr>
+                  <td>500ml</td>
+                  <td>Creame</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="chocolate_chip_cookies">
+      <img src="resources/pictures/chocolate2.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Chewy Chocolate Chip Cookies</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">10 Minutes + 12 Minutes => 3 Hours </h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Medium</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        Pinned over 3 million times, these super soft and chewy chocolate chip cookies are the most popular cookie recipe on my website. Melted butter, more brown sugar than white sugar, and an extra egg yolk guarantee the chewiest chocolate chip cookie texture. Big chocolate chunks promise chocolate in every single bite. The flavor and texture of these cookies is unparalleled by any other recipe. No mixer required! 
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Whisk the flour, baking soda, cornstarch, and salt together in a large bowl. Set aside.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">In a medium bowl, whisk the melted butter, brown sugar, and granulated sugar together until no brown sugar lumps remain. Whisk in the egg, then the egg yolk. Finally, whisk in the vanilla extract. Pour the wet ingredients into the dry ingredients and mix together with a large spoon or rubber spatula. The dough will be very soft, yet thick. Fold in the chocolate chunks. They may not stick to the dough because of the melted butter, but do your best to combine them. Cover the dough and chill in the refrigerator for 2-3 hours or up to 3-4 days. Chilling is mandatory. I highly recommend chilling the cookie dough overnight for less spreading. (Some readers have asked if it’s possible to roll into balls and then chill, but I don’t recommend it. The cookie dough is quite sticky and loose to section into balls before chilling.)</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Take the dough out of the refrigerator and allow to slightly soften at room temperature for 10 minutes.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Preheat oven to 325°F (163°C). Line two large baking sheets with parchment paper or silicone baking mats. (Always recommended for cookies.) Set aside.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Roll the dough into balls, about 3 Tablespoons of dough each. The dough will be crumbly, but the warmth of your hands will help the balls stay together. Roll the cookie dough balls to be taller rather than wide, to ensure the cookies will bake up to be thick. See this post for more detail and a photo. Place 8 balls of dough onto each cookie sheet. Press a few more chocolate chips/chunks on top of the dough balls for looks, if desired.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Bake the cookies for 12-13 minutes. The cookies will look very soft and underbaked. They will continue to bake on the cookie sheet. Allow to cool on the cookie sheet for 10 minutes before transferring to a wire rack to cool completely.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Cookies stay fresh covered at room temperature for up to 1 week.</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>280g</td>
+                  <td>All-purpose flour (spoon & leveled)</td>
+                </tr>
+                  <tr>
+                  <td>1 teaspoon</td>
+                  <td>Baking soda</td>
+                </tr>
+                <tr>
+                  <td>1 and 1/2 teaspoons</td>
+                  <td>Cornstarch</td>
+                </tr>
+                <tr>
+                  <td>1/2 teaspoon</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>170g</td>
+                  <td>Unsalted butter, melted & slightly cooled*</td>
+                </tr>
+                <tr>
+                  <td>150g</td>
+                  <td>Packed light or dark brown sugar</td>
+                </tr>
+                <tr>
+                  <td>100g</td>
+                  <td>Granulated sugar</td>
+                </tr>
+                <tr>
+                  <td>1 large</td>
+                  <td>Egg</td>
+                </tr>
+                <tr>
+                  <td>2 teaspoons</td>
+                  <td>Pure vanilla extract</td>
+                </tr>
+                <tr>
+                  <td>225g</td>
+                  <td>Semi-sweet chocolate chips or chocolate chunks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <p>&copy; Copyright WBS Course 15/2021 Group 1</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
