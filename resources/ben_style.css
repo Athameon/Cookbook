@@ -10,6 +10,9 @@ header {
 @media (max-width: 1400px) {
   header {
     flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
   nav {
     margin-top: 20px;
@@ -19,6 +22,16 @@ header {
 .logo {
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logo h1 {
+    margin-top: 20px;
+  }
 }
 
 .logo h1 {
@@ -44,10 +57,11 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
+  min-height: 50px;
 }
 
 .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
   background-color: #daefd5;
   min-width: 200px;
@@ -71,8 +85,9 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
+  display: block;
   opacity: 1;
-  transition: opacity 300ms ease;
+  transition: opacity 300ms ease, display 300ms ease;
 }
 
 .dropdown:hover .dropbtn {
@@ -81,6 +96,9 @@ header {
 
 nav {
   float: right;
+}
+nav a {
+  text-decoration: none;
 }
 
 body {
@@ -100,6 +118,7 @@ footer {
   min-height: 30px;
   background-color: #daefd5;
   padding-top: 20px;
+  padding-bottom: 10px;
   text-align: center;
   position: fixed;
   bottom: 0px;
@@ -232,7 +251,7 @@ footer p {
   margin-top: 20px;
   clear: both;
   display: flex;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -293,6 +312,7 @@ th {
 .displayDetailsButton {
   background-color: #348d9a;
   padding: 5px;
+  margin-top: 20px;
   color: white;
   font-size: 24px;
   float: right;
