@@ -162,7 +162,7 @@ footer p {
   font-size: 86px;
   text-shadow: 5px 2px 1px white;
   cursor: pointer;
-  transition-property: width, height;
+  transition-property: width, height, transform;
   transition-duration: 200ms;
   text-decoration: none;
   color: inherit;
@@ -172,6 +172,7 @@ footer p {
 .landing_dish:hover {
   height: 100%;
   width: 100%;
+  transform: rotateZ(5deg);
 }
 
 @media screen and (max-width: 1200px) {
