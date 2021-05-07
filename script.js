@@ -12,6 +12,12 @@ function displayHideDetails(id, buttonId) {
       details.style.opacity = 1;
       details.style.height = 'auto';
       document.getElementById(buttonId).textContent = "Hide"
+      
+      scrollToId(id);
     }
   }
+}
+
+function scrollToId(id) {
+  document.getElementById(id).scrollIntoView();
 }
