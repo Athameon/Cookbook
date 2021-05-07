@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookbook</title>
+  <link rel="stylesheet" href="resources/reset.css">
+  <link rel="stylesheet" href="resources/ben_style.css">
+  <link rel="stylesheet" href="resources/danny_style.css">
+  <link rel="stylesheet" href="resources/joachim_style.css">
+  <link href="resources/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="resources/pictures/logo.png" alt="Logo">
+      <h1>The WBS Cook Book</h1>
+    </a>
+    <nav>
+      <div class="dropdown">
+        <a href="breakfast.html" class="dropbtn">Breakfast</a>
+        <div class="dropdown-content">
+          <a href="#">Sandwiches</a>
+          <a href="#">Cerial</a>
+          <a href="#">French Egg Scramble on Toast</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="lunch.html" class="dropbtn">Lunch</a>
+        <div class="dropdown-content">
+          <a href="#">Pasta</a>
+          <a href="#">Pizza</a>
+          <a href="#">Schnitzel</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="dinner.html" class="dropbtn">Dinner</a>
+        <div class="dropdown-content">
+          <a href="#">Steak</a>
+          <a href="#">Sushi</a>
+          <a href="#">Salad bowl</a>
+          <a href="#">Salmon</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="sides.html" class="dropbtn">Sides</a>
+        <div class="dropdown-content">
+          <a href="#">Fries</a>
+          <a href="#">Rice</a>
+          <a href="#">Potatoes</a>
+          <a href="#">Bread</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dessert</div>
+        <div class="dropdown-content">
+          <a href="#">Ice Cream</a>
+          <a href="#">Tiramisu</a>
+          <a href="#">Creme Brulee</a>
+          <a href="#">Cake</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="snacks.html" class="dropbtn" id="last_nav_element">Snacks</a>
+        <div class="dropdown-content">
+          <a href="#">Protein Balls</a>
+          <a href="#">Chips</a>
+          <a href="#">Chocolate</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="recipe">
+    <div class="recipe_item" id="first_recipe">
+      <img src="resources/pictures/dinner_steak.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Steak</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">60 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Advanced</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        Here's a cheffy way to cook steak that really makes the most of a good steak. You'll feel like a total pro cooking it and it'll rival the best steakhouse in town!
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Take the steak out of the fridge 30 minutes prior to bring to room temperature. Pat dry the steak with a paper towels.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Heat oil in a heavy based skillet over high heat until it is very hot - you should see smoke!</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Sprinkle each side of the steak generously with salt and pepper, then immediately place in the skillet.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Cook for 2 - 2.5 minutes until you get a great crust, then turn.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Leave for 1 minute, then push steaks to one side and toss in butter, garlic and thyme. BE CAREFUL - the thyme will sputter!</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">As soon as the butter is melted, continuously spoon the butter over the steak until it's cooked to your liking - 2 minutes in total for the 2nd side for medium rare (52C/125F, chart below for other doneness temps)</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Basting also renders fat on the side of the steak – use tongs to sear the edges at the end if you want it browned more.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Transfer steak to a plate and cover loosely with foil, rest for 5 to 10 minutes. Ready!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1-2</td>
+                  <td>Boneless Ribeye or Scotch Fillet</td>
+                </tr>
+                  <tr>
+                  <td>1 Teaspoon</td>
+                  <td>Vegetable Oil</td>
+                </tr>
+                <tr>
+                  <td>Some</td>
+                  <td>Salt and Peper</td>
+                </tr>
+                <tr>
+                    <td>75g</td>
+                    <td>Unsalted Butter</td>
+                  </tr>
+                  <tr>
+                    <td>3-6 Sprig</td>
+                    <td>Fresh Thyme or Rosemary5 garlic cloves</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Garlic Cloves</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="second_recipe">
+      <img src="resources/pictures/dinner_california_rolls.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Californian Rolls</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">60 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Moderate</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        It’s a real Japanese sushi roll with sushi rice wrapped with nori (seaweed) and stuffed with cooked imitation crab meat (or real crab meat), cucumber and avocado. Just delicious!
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Rinse the sushi rice with cold water until the water becomes clear. Than cook the rice in an electric rice cooker.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Mix the rice vinegar, sugar and salt together in a small bowl. Make sure the sugar is dissolved. Add the vinegar mixture to the rice, stir evenly.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Chop the Crab Delights and mix with mayonnaise and lemon juice.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Lay the bamboo mat on a flat surface and cover it with plastic wrap. Lay a small sheet of nori (3.75 inch x 8 inch) on the bottom part.</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Using a spoon, scoop the rice onto the seaweed and distribute it evenly in a thin layer. Use the back of the spoon to press and flatten the surface of the rice. </li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Sprinkle some toasted sesame seeds on top of the rice and use the back of the spoon to press the sesame onto the rice.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Turn the seaweed over. Arrange 4 strips of cucumber and 2 strips of avocado, follow by the crab. Make sure you don't overfill. Roll the California Roll using the bamboo mat and make sure that you tug the sushi rolls very tight.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Cut both ends of the sushi rolls using a sharp knife, about 1/2 inch off each end. Ready!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>300 g</td>
+                  <td>Sushi Rice</td>
+                </tr>
+                  <tr>
+                  <td>A bundle</td>
+                  <td>Nori or toasted seaweed</td>
+                </tr>
+                <tr>
+                  <td>2 Packages</td>
+                  <td>Imitation crab meat that comes in sticks or chunks</td>
+                </tr>
+                  <tr>
+                  <td>200g</td>
+                  <td>Fresh cucumber</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Avocado</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="third_recipe">
+      <img src="resources/pictures/dinner_superfood_salad.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Superfood Salad</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">45 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Easy</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+
+      </div>
+      <p class="recipe_description">
+        Full of great veggies and high-fibre quinoa, this easy-to-make salad is nutritious, delicious and super-satisfying. Top with juicy pomegranate seeds for a great burst of flavour. You will be enchanted!
+      </p>
+      <button id="firstDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Scrub and chop the sweet potatoes into 2.5cm chunks. Place into a roasting tray with the chilli flakes, ground coriander and cinnamon, a drizzle of olive oil and a little sea salt and black pepper, then toss well.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Spread out into an even layer and place in the hot oven for 15 to 20 minutes, or until golden and crisp.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Meanwhile, cook the quinoa in boiling salted water according to the packet instructions.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Slice the broccoli into small florets, then halve and finely slice the stalk. Place into a heatproof colander and rest it over the quinoa pan. Cover and steam for 3 minutes, or until just tender</li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Meanwhile, toast the nuts in a dry frying pan over a medium-high heat for 2 to 3 minutes, then transfer to a pestle and mortar and crush lightly</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Halve the pomegranate and squeeze half the juice into a large bowl. Add 3 times as much extra virgin olive oil, the lime juice and balsamic vinegar. Whisk well and season to taste.</li>
+            <li><button class="recipe_step_title">Step 7</button></li>
+            <li class="recipe_step">Add the cooled broccoli and sprouts to the dressing, then snip in the cress. Roughly chop the coriander (stalks and all), finely slice the chilli and add to the bowl along with the quinoa and sweet potato.</li>
+            <li><button class="recipe_step_title">Step 8</button></li>
+            <li class="recipe_step">Bash the reserved pomegranate half with a wooden spoon so the seeds come tumbling out and scatter these over the platter along with the nuts, snip the cress on top, then serve with the feta crumbled over the top.</li>
+        </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>600g</td>
+                    <td>Sweet Potatoes</td>
+                  </tr>
+                <tr>
+                  <td>1 Pinch Each</td>
+                  <td>Chilly Flakes, Cinnemon, Coriander</td>
+                </tr>
+                <tr>
+                  <td>200g Each</td>
+                  <td>Quinoa and Broccoli</td>
+                </tr>
+                <tr>
+                  <td>35g </td>
+                  <td>Mixed Nuts</td>
+                </tr>
+                <tr>
+                  <td>20g</td>
+                  <td>Feta Cheese</td>
+                </tr>
+                <tr>
+                    <td>0g</td>
+                    <td>Virgin Olive Oil</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Limes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe_item" id="fourth_recipe">
+      <img src="resources/pictures/dinner_salmon.jpg" alt="recipe">
+      <div class="recipe_head">
+        <h2 class="recipe_title">Crispy Salmon</h2>
+        <div><i class="space_right far fa-clock"></i><h3 class="recipe_time">30 Minutes</h3></div>
+        <div><div class="space_right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div><h3 class="recipe_level">Advanced</h3></div>
+        <!-- <i class="fas fa-star"></i><i class="far fa-star"></i><i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <p class="recipe_description">
+        Try this delicious looking salmon when you are up for any quick and quick to ready seafood meal! Give it a try!
+      </p>
+      <button id="secondDisplayDetailsButton" class="displayDetailsButton" onclick="displayHideDetails(this.parentNode.id, this.id);">Display</button>
+      <div class="recipe_details">
+        <div class="recipe_instruction">
+          <h3>Instruction</h3>
+          <ul>
+            <li><button class="recipe_step_title">Step 1</button></li>
+            <li class="recipe_step">Take your filet of salmon, and roll it, skin side facing out. Place the retracted salmon filet on the cutting board, and score your skin layer crosswise about 50 % inch deep.</li>
+            <li><button class="recipe_step_title">Step 2</button></li>
+            <li class="recipe_step">Open each score and sprinkle salt to the cut (ouchie!). Gordon suggests it’s also possible to add Thyme, Rosemary, or Fresh Basil at this stage of the preparation.</li>
+            <li><button class="recipe_step_title">Step 3</button></li>
+            <li class="recipe_step">Heat much skillet over med heat, and add essential olive oil when the pan is hot.</li>
+            <li><button class="recipe_step_title">Step 4</button></li>
+            <li class="recipe_step">Add the salmon, skin side down, when the oil actually starts to lightly smoke. Keep your fingers on top from the salmon filet to get a bit to help keep it nice and flat. </li>
+            <li><button class="recipe_step_title">Step 5</button></li>
+            <li class="recipe_step">Remove the pan from heat, flip the salmon back to your skin layer side, and allow it to cook a minute.</li>
+            <li><button class="recipe_step_title">Step 6</button></li>
+            <li class="recipe_step">Now there is a wonderful, masterfully prepared filet of salmon. A festival for the palate!</li>
+          </ul>
+        </div>
+        <div class="recipe_ingredients">
+          <h3>Ingredients</h3>
+          <div class="recipe_table">
+            <table>
+              <thead>
+                <tr>
+                  <th><h4>Amount</h4></th>
+                  <th><h4>Ingredients</h4></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9</td>
+                  <td>Salmon Filet</td>
+                </tr>
+                  <tr>
+                  <td>Some</td>
+                  <td>Olive Oil</td>
+                </tr>
+                <tr>
+                  <td>Some</td>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <td>Various Herbs</td>
+                  <td>e.g. Thyme, Rosmary and Basil</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <p>&copy; Copyright WBS Course 15/2021 Group 1</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+a
